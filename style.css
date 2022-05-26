@@ -1,122 +1,110 @@
-html {
-    background-color: rgb(3, 3, 65);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(3, 3, 65);
 }
 
-/* Start of header navigation styling */
-.nav-container {
-    width: auto;
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
-header {
+/* start of navbar styling */
+
+.navbar {
     background-color: white;
+    color: black;
+    height: 70px;
 }
 
-header::after {
-    content: '';
-    display: table;
-    clear: both;
+.navbar a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.logo {
+.navbar .container {
     display: flex;
-    float: left;
-    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
-.title {
-    font-size: 20px;
-    padding: 17px 10px;
+.navbar .logo {
+    display: flex;
+    align-items: center;
 }
 
-nav {
-    float: right;
-    padding-right: 70px;
+.navbar .logo p {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: x-large;
 }
 
-nav ul {
-margin: 0;
-padding: 0;
+.navbar ul {
+    display: flex;
 }
 
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 30px;
+.navbar ul li {
+    margin-left: 20px;
 
     position: relative;
 }
 
-nav a{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-/* Responsive hover feature nav items changing color and select bar on top. */
 nav a:hover {
     color: rgb(39, 39, 197);
 }
-
-nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: black;
-
-    position: absolute;
-    top: 0;
-    width: 0%;
-
-    transition: all ease-in-out 200ms;
-}
-
-nav a:hover::before {
-    width: 100%;
-}
-/* End of hover feature for nav items */
-/* End of header navigation styling */
+/* End of navbar styling */
 
 /* Start of Intro container */
 
-.intro-container {
+.header {
     width: 100%;
     padding: 100px 25px;
 }
 
-.intro {
-    padding: 20px 100px;
-}
-
-.intro p {
+.intro-text p {
     font-size: 22px;
     color: #00cf5d;
 }
 
-.intro h1 {
+.intro-text h1 {
     font-size: 60px;
     color: white;
     font-weight: 900;
     margin-bottom: 25px;
 }
 
-.intro h3 {
+.intro-text h3 {
     color: #00cf5d;
     font-size: 1.38316rem;
     padding-bottom: 10px;
 }
 
-.intro ul {
+.intro-text ul {
     display: flex;
     margin-bottom: 25px;
 }
 
-.intro li {
+.intro-text li {
     margin-left: 15px;
     margin-bottom: 5px;
     padding-right: 20px;
@@ -131,7 +119,6 @@ nav a:hover::before {
     border: 2px solid #00cf5d;
     color: white;
     margin-right: 10px;
-
 }
 
 .action .button-empty {
