@@ -1,63 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin Oversluizen | Frontend Developer</title>
-    <meta name="description" content="A portfolio page to showcase my skills as a developer">
-    <meta name="author" content="Kevin Oversluizen">
+    <meta
+      name="description"
+      content="A portfolio page to showcase my skills as a developer"
+    />
+    <meta name="author" content="Kevin Oversluizen" />
 
     <!-- This is Eric Meyers CSS reset
     <link rel="stylesheet" href="css-reset.css"> -->
 
     <!-- This is my own stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- My Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar">
-        <div class="container">
-
-            <div class="logo">
-                <a href="/index.html"><img src="/images/logo-k-temp.svg" width="50px" height="50px" alt="A logo for my portfolio site"></a>
-                <p class="title">Welcome!!</p>
-            </div>
-
-            <ul class="nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skill</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><img src="/images/github-icon.svg" alt="github-icon"></a></li>
-                <li><a href="#"><img src="/images/linkedin-icon.svg" alt="linkedin-icon"></a></li>
-            </ul>
+      <div class="container">
+        <div class="logo">
+          <img
+              src="/images/logo-k-temp.svg"
+              width="50px"
+              height="50px"
+              alt="A logo for my portfolio site"
+          />
+          <p class="title">Welcome!!</p>
         </div>
+
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Skill</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="https://github.com/Kevin-Oversluizen" target="_blank"
+              ><img src="/images/github-icon.svg" alt="github-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/kevin-oversluizen" target="_blank"
+              ><img src="/images/linkedin-icon.svg" alt="linkedin-icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <header class="header">
+      <div class="container">
+        <div class="intro-text">
+          <p>Hello world! I am</p>
+          <h1>Kevin Oversluizen</h1>
+          <h3>eCommerce Specialist</h3>
+          <ul>
+            <li>Starting Frontend Developer</li>
+            <li>Online Merchandiser</li>
+          </ul>
+        </div>
+
+        <div class="action">
+          <a href="#" class="button">Get Resume</a>
+          <a href="#about" class="button-empty">About</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
         <div class="container">
-            <div class="intro-text">
-                <p>Hello world! I am</p>
-                <h1>Kevin Oversluizen</h1>
-                <h3>Aspiring Developer</h3>
-                <ul>
-                    <li>Frontend Developer</li>
-                    <li>Online Merchandiser</li>
-                </ul>
+            <div class="about-text">
+                <p>Experienced eCommerce professional with a growing interest to branch out into a Front-end development job. Proven history of working in the fashion and the outdoor industry. Has a B.B.A. with a focus on Sportmarketing and Management from the Rotterdam University of Applied Sciences. Skilled in eCommerce, Merchandising (Demandware/SFCC), HTML, CSS, Google Analytics, Microsoft Office, Buying and Forecasting. Native in Dutch and full proffesional proficiency in English.</p>
+
+                <div class="action">
+                    <a href="#" class="button">Get Resume</a>
+                    <a href="#" class="button-empty">My Skills</a>
+                </div>
             </div>
 
-            <div class="action">
-                <a href="#" class="button">Get Resume</a>
-                <a href="#" class="button-empty">About</a>
-            </div>
+            <img class="profile-picture" src="/images/me.jpeg" alt="Picture of Kevin Oversluizen">
         </div>
-    </header>   
-</body>
+    </section>
+
+
+  </body>
 </html>

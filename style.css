@@ -1,133 +1,187 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: rgb(3, 3, 65);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(3, 3, 65);
 }
 
-h1, h2 {
-    margin-bottom: 15px;
+h1,
+h2 {
+  margin-bottom: 15px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 /* start of navbar styling */
 
 .navbar {
-    background-color: white;
-    color: black;
-    height: 70px;
+  background-color: white;
+  color: black;
+  height: 70px;
 }
 
 .navbar a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .navbar .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .logo p {
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: x-large;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 .navbar ul {
-    display: flex;
+  display: flex;
 }
 
 .navbar ul li {
-    margin-left: 20px;
+  margin-left: 20px;
 
-    position: relative;
+  position: relative;
 }
 
 nav a:hover {
-    color: rgb(39, 39, 197);
+  color: rgb(39, 39, 197);
 }
 /* End of navbar styling */
 
 /* Start of Intro container */
 
 .header {
-    width: 100%;
-    padding: 100px 25px;
+  width: 100%;
+  padding: 200px 25px;
 }
 
 .intro-text p {
-    font-size: 22px;
-    color: #00cf5d;
+  font-size: 22px;
+  color: #00cf5d;
 }
 
 .intro-text h1 {
-    font-size: 60px;
-    color: white;
-    font-weight: 900;
-    margin-bottom: 25px;
+  font-size: 60px;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 25px;
 }
 
 .intro-text h3 {
-    color: #00cf5d;
-    font-size: 1.38316rem;
-    padding-bottom: 10px;
+  color: #00cf5d;
+  font-size: 1.38316rem;
+  padding-bottom: 10px;
 }
 
 .intro-text ul {
-    display: flex;
-    margin-bottom: 25px;
+  display: flex;
+  margin-bottom: 25px;
 }
 
 .intro-text li {
-    margin-left: 15px;
-    margin-bottom: 5px;
-    padding-right: 20px;
-    list-style: disc;
-    color: white;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding-right: 20px;
+  list-style: disc;
+  color: white;
 }
 
 .action .button {
-    padding: 15px 25px;
-    background-color: #00cf5d;
-    border-radius: 5px;
-    border: 2px solid #00cf5d;
-    color: white;
-    margin-right: 10px;
+  padding: 15px 25px;
+  background-color: #00cf5d;
+  border-radius: 5px;
+  border: 2px solid #00cf5d;
+  color: white;
+  margin-right: 10px;
 }
 
 .action .button-empty {
-    padding: 15px 25px;
-    border: 2px solid #00cf5d;
-    border-radius: 5px;
-    color: white;
+  padding: 15px 25px;
+  border: 2px solid #00cf5d;
+  border-radius: 5px;
+  color: white;
 }
 
 .action a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+/* End of Intro container */
+
+/* Start of Section About me */
+
+.about {
+    width: 100%;
+    padding: 100px 25px;
+  }
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .container img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text p {
+    color: white;
+    text-align: left;
+    margin-right: 200px;
+}
+
+.about-text .action {
+    padding-top: 30px;
+}
+
+.profile-picture {
+    filter: grayscale(100%);
+}
+
+.profile-picture:hover {
+    filter: grayscale(0%);
+    /* transition-delay: 0.1s; */
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+/* End of Section About me */
+
+.myskills {
+    padding: 100px 25px;
 }
