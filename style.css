@@ -26,6 +26,19 @@ ul {
   padding: 0 30px;
 }
 
+.section-header p {
+  text-decoration: line-through;
+  color: #00cf5d;
+}
+
+.section-header h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-top: 100px;
+}
+
 /* start of navbar styling */
 
 .navbar {
@@ -139,7 +152,7 @@ nav a:hover {
 
 .about {
   width: 100%;
-  padding: 100px 25px;
+  padding: 50px 25px 100px;
 }
 
 .about .container {
@@ -185,7 +198,7 @@ nav a:hover {
 /* Start of Section My Skills */
 
 .myskills {
-  padding: 100px 25px;
+  padding: 100px 25px 150px 25px;
   color: white;
 }
 
@@ -195,7 +208,7 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.skill1 {
+.skill1, .skill2, .skill3 {
   background-color: rgb(19, 19, 85);
   border-radius: 6px;
   border: 2px solid #00cf5d;
@@ -206,48 +219,80 @@ nav a:hover {
   display: flex;
 }
 
-.skill2 {
-  background-color: rgb(19, 19, 85);
-  border-radius: 6px;
-  border: 2px solid #00cf5d;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.246);
-  margin: 15px 25px;
-  min-height: 150px;
-  max-width: 28%;
-  display: flex;
-}
-
-.skill3 {
-  background-color: rgb(19, 19, 85);
-  border-radius: 6px;
-  border: 2px solid #00cf5d;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.246);
-  margin: 15px 25px;
-  min-height: 150px;
-  max-width: 28%;
-  display: flex;
-  }
-
-  .skill4 {
-    background-color: rgb(19, 19, 85);
-    border-radius: 6px;
-    border: 2px solid #00cf5d;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.246);
-    margin: 15px 25px;
-    min-height: 150px;
-    max-width: 28%;
-    display: flex;
-    }
-
-.skill1, .skill2, .skill3, .skill4 {
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
   padding: 25px 25px 25px 25px;
   box-sizing: border-box;
-} 
+}
 
-.skill1 i, .skill2 i, .skill3 i, .skill4 i {
+.skill1 i,
+.skill2 i,
+.skill3 i,
+.skill4 i {
   margin-right: 25px;
 }
 
-
-
 /* End of Section My Skills */
+
+/* Start of Section Portfolio */
+
+.portfolio {
+  padding: 100px 25px;
+  color: white;
+}
+
+.portfolio .container {
+  display: flex;
+}
+
+.portfolio1 img {
+  width: 90%;
+  height: 60%;
+  border-radius: 4px;
+  padding-top: 15px;
+}
+
+.portfolio2 img {
+  width: 90%;
+  height: 60%;
+  border-radius: 4px;
+  padding-top: 15px;
+}
+
+.portfolio1, .portfolio2 {
+  background-color: rgb(19, 19, 85);
+  border-radius: 6px;
+  border: 2px solid #00cf5d;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.246);
+  margin: 15px 25px;
+  min-height: 150px;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio .text-container {
+  text-align: center;
+  padding: 15px 15px;
+}
+
+.portfolio i {
+  padding-bottom: 10px;
+}
+
+.portfolio h3, .used-skill{
+  color: #00cf5d
+}
+
+.portfolio .used-skill {
+  font-size: 14px;
+}
+
+.icon-card-left {
+  padding-right: 10px;
+}
+
+/* End of Section Portfolio */
